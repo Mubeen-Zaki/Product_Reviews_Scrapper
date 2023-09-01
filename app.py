@@ -46,7 +46,7 @@ def search():
             logging.INFO(e)
         #Storing the data in MongoDB
         try:
-            uri = "mongodb+srv://linux3760:linux3760@cluster0.urxsqur.mongodb.net/?retryWrites=true&w=majority"
+            uri = "mongodb+srv://user.name:user.password@cluster0.urxsqur.mongodb.net/?retryWrites=true&w=majority"
             connection = pymongo.MongoClient(uri)
             db = connection["webscrap_db"]
             collec = db["reviews"]
